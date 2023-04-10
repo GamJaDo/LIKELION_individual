@@ -1,0 +1,96 @@
+.hold{
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    position: fixed;
+}
+
+.profile-up{
+    animation:
+          slideUp 1.5s .5s cubic-bezier(0.17,.88,.32,1.27) both,
+          fadeIn .25s .5s ease-in both;
+      /*text-shadow: 3px 3px 7px rgba(0,0,0,.61);*/
+      width: 100%;
+}
+@keyframes slideUp {
+    from {transform: translateY(200%);}
+    to {transform:translateY(0%);}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.maintext{
+    text-align: center;
+
+    font-size: 24px;
+    font-weight: bold;
+    /*font-family: */
+    color: black;
+    opacity: 0.8;
+}
+
+.skilltext{
+    text-align: center;
+    font-weight: 20px;
+    line-height: 170px;
+}
+
+.skilllogo{
+    text-align: center;
+}
+
+.skilllogo-img:hover{
+    transform: scale(1.1);
+}
+
+.skilllogo-img{
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgb(62, 212, 190, 0.3);
+    transform: scale(1); /* 크기 hold */
+    border-radius: 50%;
+}
+
+.porfile-img {
+    width: 300px;
+    height: 300px;
+    border: 5px solid #3ED4BE;
+    transform: scale(1); /* 크기 hold */
+    border-radius: 50%;
+}
+/*
+.porfile-img:hover {
+    transform: scale(1.3);
+    margin: 0px auto;
+    overflow: hidden;
+}
+*/
+.porfile-name{ /* 프로필  이름 */
+    font-size: 50px;
+    font-weight: 900px;
+    color: #3ED4BE;
+    font-weight: bold;
+}
+
+.profile-introduce{
+    color: rgb(0, 0, 0, 0.7);
+    font-weight: 30px;
+    line-height: 170px;
+    /*float: left;*/
+}
+.center{
+    text-align: center;
+}
+
+/* 하단 코멘트 */
+
+.comment {
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    color: rgb(0, 0, 0, 0.4);
+}

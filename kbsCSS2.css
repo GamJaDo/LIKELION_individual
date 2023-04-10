@@ -1,0 +1,55 @@
+.information p{/*font-size변경, fon-weight벼경*/
+    font-size: 24px;
+    font-weight: bold;
+    /*font-family: */
+    color: black;
+    opacity: 0.8;
+    font-style: italic;
+}
+
+.main-introduction {
+    font-size: 18px;
+    /*font-family: */
+    opacity: 0.8;
+}
+
+/* sns 픽토그램 설정*/
+.fa-brands, .fa-solid{
+    color: rgb(0, 0, 0, 0.4);
+}
+
+.sns-pictogram{
+    text-align: center;
+    font-weight: 20px;
+    line-height: 170px;
+}
+
+.sns-pictogram i {/*좀더 좋은 선택자명으로 변경 ㄱㄱ*/
+    margin-right: 60px;
+}
+
+/*픽토그램 반응형 커서*/
+footer i:hover {
+    transform: translate(3px, -3px);
+}
+
+.fade-in{
+    opacity:0; 
+}
+
+.wavve{
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: wavve 1.5s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes wavve{
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-10px)
+    }
+}
